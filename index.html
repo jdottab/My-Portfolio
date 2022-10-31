@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Title-->
+        <title>My Portfolio</title>
+        <!--Link to css-->
+        <link rel="stylesheet" href="style.css">
+        <!--Link to fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+        <!--Link to icons-->
+        <script src="https://kit.fontawesome.com/5eac4eb036.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="content">
+        <!--Intro: Name, short blurb-->
+        <header class="home page active" id="home">
+            <div class="introduction">
+                <h1 class="intro">Hello, My name is <span class="myname">Josepha Taboh.</span></h1>
+                <h1 class="intro">I am an aspiring web developer</h1>
+                
+            </div>
+        </header>
+        <!--Navigation bar-->
+        <nav>
+            <div class="navigation">
+                <!--Home, AboutMe, Projects, ContactMe-->
+                <a href="#home" class="nav-item active-nav" data-id="home">Home</a>
+                <a href="#about" class="nav-item" data-id="about">About Me</a>
+                <a href="#projects" class="nav-item" data-id="projects">Projects</a>
+                <a href="#contact" class="nav-item" data-id="contact">Contact Me</a>
+            </div>
+        </nav>
+        <!--AboutMe: education, skills, hobbies, aspirations-->
+        <main>
+            <section class="sect page abt-me" id="about">
+                <h2 class="title">About Me</h2>
+                <div class="profile">
+                    <div class="laptop">
+                        <div class="screen">
+                            <div class="glare"></div>
+                        </div>
+                        <div class="kybrd"></div>
+                    </div>
+                    <div class="abt-me-p">
+                        <p class="me">
+                            Senior Univerity student aiming for BS in Computer Science 
+                            and looking to get real world experience. Self-taught, takes intiative, 
+                            quick learner, and with background as a computer science student, can 
+                            adapt quickly to neccessary changes.
+                        </p>
+                    </div>
+                </div>
+                
+                
+                <div class="abt-me-item skills">
+                    <h3 class="subtitle skill-title">Skills</h3>
+                    <div class="skillls">
+                        <div class="skill html">
+                            <img src="./html-logo.png" alt="HTML5_logo_and_wordmark">
+                        </div>
+                        <div class="skill css">
+                            <img src="./css-logo.png" alt="CSS3_logo_and_wordmark">
+                        </div>
+                        <div class="skill js">
+                            <img src="./js-logo.png" alt="JavaScript-logo">
+                        </div>
+                        <div class="skill react">
+                            <img src="./react-logo.png" alt="react-logo">
+                        </div>
+                        <div class="skill ps">
+                            <img src="./ps-logo.png" alt="photoshop-logo">
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <!--Projects: Website, mock-google, github link-->
+            <section class="sect page projects" id="projects">
+                <h2 class="title">My Projects</h2>
+                <div class="my-projects">
+                    <div class="project proj1">
+                        <h3 class="project-title heading">Project Name</h3>
+                        <div class="img"></div>
+                        <div class="description">
+                            <p>Lorem ipsum and whatnot</p>
+                        </div>
+                    </div>
+                    <div class="project proj2">
+                        <h3 class="project-title heading">Project Name</h3>
+                        <div class="img"></div>
+                        <div class="description">
+                            <p>Lorem ipsum and whatnot</p>
+                        </div>
+                    </div>
+                    <div class="project proj1">
+                        <h3 class="project-title heading">Project Name</h3>
+                        <div class="img"></div>
+                        <div class="description">
+                            <p>Lorem ipsum and whatnot</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--ContactME: email, phone number, linkedin-->
+            <section class="sect page contact" id="contact">
+                <h2 class="title">Get In Touch</h2>
+                <div class="contact-form">
+                    <form action="">
+                        <input type="text" placeholder="Name" class="form">
+                        <input type="text" placeholder="Email" class="form">
+                        <textarea name="mssg" id="mssg-area" cols="30" rows="10" placeholder="Message" class="form"></textarea>
+                        <input type="submit" id="submit" class="submit-btn">
+                    </form>
+                </div>
+                
+            </section>
+        </main>
+        <footer class="bottom">
+            <div class="back-to-top" onclick="ToTop()">
+                <div class="arrow arrow-left"></div>
+                <div class="arrow arrow-right"></div>
+            </div>
+            <div class="contacts">
+                <div class="cntc phone-number">(678-999-8212)</div>
+                <div class="cntc email-adr">firstlast@example.com</div>
+                <div class="cntc lnkdn"><a href="http://">LinkedIn Page</a></div>
+            </div>
+        </footer>
+        <!--Link to js-->
+        <!-- <script>
+            window.onresize= () => {
+                console.log(window.innerWidth);
+            }
+        </script> -->
+        <script src="./index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,331 @@
+/*All*/
+:root{
+    /*--color-bkg: rgb(1, 9, 8);*/
+     --color-bkg: #101415; 
+    --color-primary: rgb(244, 250, 248);
+    --color-secondary: rgb(18, 165, 148);
+    --color-sechover: rgb(65, 227, 208);
+}
+*{
+    background-color: var(--color-bkg);
+    color: var(--color-primary);
+    font-family: 'League Spartan', sans-serif;
+}
+::selection{
+    color: black;
+    background-color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    animation-delay: 100ms;
+    margin: 0px;
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+.page{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+/*Home page*/
+.introduction{
+    position: absolute;
+    width: 98%;
+    height: 100%;
+}
+.intro{
+    position: relative;
+    text-align: center;
+    top: 40%;
+    margin: 0 auto;
+    border-right-color: rgba(255,255,255,.75);
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    width: 100%;
+/*     animation: typewriter 5s steps(62) 1s 1 normal both, blinkTextCursor 1s steps(62) infinite normal;
+ */}/* 
+@keyframes typewriter{
+    from{width: 0%;}
+    to{width: 98%;}
+}
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(225,225,225,.75);}
+    to{border-right-color: transparent;}
+} */
+.myname{
+    color: var(--color-secondary);
+}
+/*Nav Bar*/
+.navigation{
+    position: fixed;
+    top: 0;
+    padding: 20px 0px 10px 0px;
+    margin: 0px;
+    border: none;
+    background-color: #1c2224;
+    width: 100%;
+    height: 30px;
+    text-align: right;
+    justify-content: center;
+    z-index: 10;
+    box-shadow: 9px 2px 15px #111111;
+}
+.nav-item{
+    margin: 3px 10px 0 10px;
+    background-color: #1c2224;
+    text-decoration: none;
+    font-size: 1.25em;
+    position: relative;
+}
+@keyframes slide-in{
+    from{transform: translateX(-100%);}
+    to{transform: translateX(0%);}
+}
+.active-nav::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-secondary);
+    bottom: -5%;
+    animation-name: slide-in;
+    animation-duration: 1000ms;
+    overflow-x: hidden;
+    /* transition: ease-in 8000ms; */
+}
+/*About*/
+.abt-me{
+    position: relative;
+}
+.abt-me .title{
+    text-align: right;
+}
+.profile{
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+}
+.abt-me-p{
+    width: 500px;
+    display: inline-block;
+    margin: auto auto;
+    justify-content: right;
+}
+.me{
+    font-size: 1.5em;
+    line-height: 30px;
+}
+.skills{
+    /* position: absolute;
+    bottom: 150px; */
+    display: block;
+    justify-content: center;
+}
+.skill-title{
+    text-align: center;
+    font-size: 2em;
+}
+.skillls{
+    display: flex;
+    justify-content: center;
+}
+.skill{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: var(--color-secondary);
+    width: 125px;
+    height: 60px;
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+.laptop{
+    display: inline-block;
+    /* margin-left: 10vw;
+    margin-right: 10vw; */
+    margin: auto auto;
+    padding-left: 50px;
+    width: 300px;
+    height: 200px;
+}
+.screen{
+    width: 250px;
+    height: 150px;
+    border: 3px solid var(--color-secondary);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.glare{
+    width: 30px;
+    height: 120px;
+    transform: skew(45deg);
+    border: 1px solid transparent;
+    background-color: rgba(250, 250, 250, 0.1);
+    position: absolute;
+    right: 30px;
+    top: -10px;
+}
+.kybrd{
+    border-bottom: 50px solid var(--color-secondary);
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-radius: 10px;
+    height: 0;
+    width: 250px;
+    position: relative;
+    left: -46px;
+}
+/*Projects*/
+.my-projects{
+    display: flex;
+    flex-direction: column;
+}
+.project{
+    width: 100%;
+    height: fit-content;
+    /* background-color: rgb(23, 0, 173); */
+    /* border: 1px solid var(--color-secondary); */
+    margin: 10px auto;
+    position: relative;
+}
+.project-title{
+    text-align: center;
+}
+.project .img{
+    width: 50%;
+    height: 300px;
+    border: 1px solid var(--color-secondary);
+    border-radius: 10px;
+    display: inline-block;
+}
+.project .description{
+    display: inline-block;
+    position: absolute;
+    right: 20%;
+    top: 50%;
+}
+/*Contact*/
+.contact-form{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    margin: auto auto;
+    width: 45%;
+}
+.form{
+    display: block;
+    margin: 10px 0 10px 0;
+    border: none;
+    background-color: #1c2224;
+    padding: 15px 5px 15px 5px;
+    width: 100%;
+}
+.submit-btn{
+    border:none;
+    background-color: var(--color-secondary);
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+/*Footer*/
+.bottom{
+    min-width: 100%;
+    min-height: fit-content;
+    margin: none;
+    position: relative;
+}
+.back-to-top{
+    position: absolute;
+    background-color: var(--color-secondary);
+    width: 35px;
+    height: 35px;
+    z-index: 5;
+    left: 50%;
+    bottom: 40px;
+}
+@keyframes bounce{
+    from{transform: translateY(0px);}
+    to{transform: translateY(-10px);}
+}
+.back-to-top:hover{
+    cursor: pointer;
+    animation:bounce 700ms alternate infinite cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.arrow-left{
+    width: 2px;
+    height: 20px;
+    transform: rotateZ(35deg);
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    right: -11px;
+    top: 5px;
+}
+.arrow-right{
+    width: 2px;
+    height: 20px;
+    transform: rotateZ(-35deg);
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    left: 16px;
+    top: 5px;
+}
+.contacts{
+    width: 100%;
+    display: flex;
+    background-color:rgb(4, 4, 4);;
+}
+.cntc{
+    margin: 20px auto;
+    background-color: transparent;
+}
+/*Others*/
+.title{
+    color: var(--color-secondary);
+    font-size: 4em;
+    z-index: 2;
+}
+.heading{
+    font-size: 2em;
+}
+
+@media (max-width: 1536px) {
+    
+}
+@media (max-width: 900px) {
+    .intro{
+        width: 80%;
+    }
+    .intro span{
+        font-size: 2em;
+    }
+    .abt-me .title{
+        text-align: center;
+    }
+    .profile{
+        text-align: center;
+        display: block;
+    }
+    .my-projects{
+        text-align: center;
+    }
+    .project .img{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+    .project .description{
+        display: block;
+        position: static;
+    }
+    .title{
+        text-align: center;
+    }
+}
